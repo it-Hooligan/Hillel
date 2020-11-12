@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Hillel",
+			"path": "."
+		},
+		{
+			"name": "BarberShop",
+			"path": "../it-hooligan.GitHub.io/BarberShop"
+		}
+	],
+	"settings": {
+		"editor.formatOnSave": true,
+		"liveServer.settings.multiRootWorkspaceName": "Hillel"
+	}
+}
