@@ -1,0 +1,57 @@
+// hello -коментарий строчный 
+/* 
+двухстрочный комментарий 
+*/
+
+/*var num = 123.5; // Обьявление числв
+var str1 = 'hello'; // можно такие и такие - но нужно испльзовать один стиль 
+var str2 = "hello"; //стили кавычек
+console.log(num);
+
+var boolTrue = true;
+var boolFalse = false;
+
+console.log(boolTrue, boolFalse);
+
+
+var empty1 = null;
+var empty2 = undefined;
+
+console.log(empty1, empty2);
+
+// Переменные 
+var a = '1';
+var b = '2';
+a = a + b;
+console.log(a, b, c);
+
+var a = '1';
+var b = '2';
+let c = '3';
+
+console.log(a, b, c);
+
+const type = typeof 'hf';
+console.log(type);*/
+
+
+var a = 3;
+var b = 4;
+
+console.log(a && b);
+
+var a = null;
+var b = 4;
+
+console.log(a && b);
+
+
+var a = 3;
+var b = 4;
+
+console.log(a || b);
+
+var a = null;
+var b = 0;
+
+console.log(a || b);
