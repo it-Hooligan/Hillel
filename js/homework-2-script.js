@@ -8,3 +8,39 @@
 Необходимо преобразовать эту строку в число, и произвести вычисление площади круга.
 При помощи операторов if определить, если площадь больше максимальной то вывести сообщение об этом ("Введенные данные больше лимита"), иначе вывести сообщение что все хорошо.
 */
+
+
+//Task 1
+const userFavoriteWriter = prompt('Ваша любимая книга?');
+
+const userResult = userFavoriteWriter || 'Аа вы не читаете книги :(';
+
+alert(`Согласен ${userResult} это отличная книга! `);
+
+
+
+//Task 2
+const userFavoriteWriter_2 = prompt('Подскажи какое сегодня число?');
+
+const userValue1 = 'Спасибо пойду переверну календарь))';
+const userValue2 = 'ну Вы даете батенька)) вы тоже с похмелья !';
+
+const userResult_2 = (userFavoriteWriter_2 && userValue1 || userValue2);
+
+alert(userResult_2);
+
+
+
+// Tack 3
+const maxAreaCircle = 300;
+
+const userRadius = prompt('Введите радиус круга', '');
+
+let radius = parseInt(userRadius);
+let circleArea = Math.PI * (radius * radius);
+
+if (circleArea > maxAreaCircle) {
+    alert('Введенные данные больше лимита');
+} else if (circleArea < maxAreaCircle) {
+    alert(`Поздравляю! Площадь круга: ${circleArea}  Все отлично!`);
+}
