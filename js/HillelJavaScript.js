@@ -55,3 +55,19 @@ var a = null;
 var b = 0;
 
 console.log(a || b);
+
+
+
+
+// итерация - повторение 
+
+console.log('Before while');
+let count = 0;
+
+while (count < 5) {
+    const input = prompt('user input');
+    console.log('user:' + input);
+    count = count + 1;
+}
+console.log(count);
+console.log('After while');
