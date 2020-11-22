@@ -16,7 +16,8 @@ let n_1 = parseInt(userValue_1);
 let n_2 = parseInt(userValue_2);
 lot:
     for (let i = n_1; i <= n_2; i++) { // идут числа в диапазоне от и до  заданого пользователем !
-        var numberPrime = i;
+        let numberPrime = i;
+
         for (let j = 2; j < i; j++) { // делим с проверкой кажое число верхнего цикла на делитель j .
             if (i % j == 0) continue lot;
         }
