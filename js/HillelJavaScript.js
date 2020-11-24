@@ -35,39 +35,79 @@ const type = typeof 'hf';
 console.log(type);*/
 
 
-var a = 3;
-var b = 4;
+// var a = 3;
+// var b = 4;
 
-console.log(a && b);
+// console.log(a && b);
 
-var a = null;
-var b = 4;
+// var a = null;
+// var b = 4;
 
-console.log(a && b);
-
-
-var a = 3;
-var b = 4;
-
-console.log(a || b);
-
-var a = null;
-var b = 0;
-
-console.log(a || b);
+// console.log(a && b);
 
 
+// var a = 3;
+// var b = 4;
+
+// console.log(a || b);
+
+// var a = null;
+// var b = 0;
+
+// console.log(a || b);
 
 
-// итерация - повторение 
 
-console.log('Before while');
-let count = 0;
 
-while (count < 5) {
-    const input = prompt('user input');
-    console.log('user:' + input);
-    count = count + 1;
+// // итерация - повторение 
+
+// console.log('Before while');
+// let count = 0;
+
+// while (count < 5) {
+//     const input = prompt('user input');
+//     console.log('user:', input);
+//     count = count + 1;
+// }
+// console.log(count);
+// console.log('After while');
+
+
+
+// do {
+
+// } while (true);
+
+// console.log('After while');
+
+
+function userInt(text) {
+    const result = prompt(text);
+    const number = parseInt(result);
+    return number;
 }
-console.log(count);
-console.log('After while');
+
+const a = userInt();
+
+console.log(a);
+
+
+
+
+
+
+
+
+
+/*
+alert(true + "1" && true + "2"); // true 2
+alert(false && true); // false
+alert(true && false); // false
+alert(false && null); //?? false 
+
+
+alert(true + "1" || true + "2"); // true 1
+alert(false || true); // true
+alert(true || false); // true
+alert(false || null); //??? null 
+*/
