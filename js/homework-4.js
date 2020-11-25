@@ -20,8 +20,7 @@ getNumbers(1, 20);
 
 //Task3
 console.log("Task3- - - - - - - -");
-getNextPrime(120);
-
+console.log(getNextPrime(120));
 
 
 function checkPrime(a) {
@@ -50,12 +49,36 @@ function getNextPrime(n) {
     for (let i = n + 1;; i++) {
 
         if (checkPrime(i) == true) {
-            console.log(i);
-            break;
 
+            //console.log(i);
+            return i;
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
