@@ -6,6 +6,38 @@
 
 // Задание можно сделать одним фидлом, не разбивая на отдельные куски
 
+
+//Task1 
+console.log(checkPrime(9));
+
+//Task2 
+getNumbers(1, 90);
+
+//Task3
+getNextPrime(120);
+
+
+function checkPrime(a) {
+
+    for (let i = 2; i < a; i++) {
+        if (a % i == 0) return false;
+    }
+    return true;
+}
+
+
+function getNumbers(x1, x2) {
+
+    for (let i = x1; i < x2; i++) {
+        if (checkPrime(i) == true) {
+            console.log(i);
+        }
+
+    }
+
+}
+
+
 function getNextPrime(n) {
 
     for (let i = n + 1;; i++) {
@@ -17,71 +49,6 @@ function getNextPrime(n) {
         }
     }
 }
-getNextPrime(120);
-
-
-
-
-// for (let i = n;;) {
-
-//     if (checkPrime(i) == true) {
-
-
-//         i++;
-//         if (checkPrime(i) == true)
-//             console.log(i);
-//         break;
-//     }
-
-
-
-
-
-// }
-
-
-// while (checkPrime(n) == true && n == n) {
-//     n++;
-//     checkPrime(n);
-
-
-
-
-
-// }
-
-
-
-
-
-
-// Tack1 
-//console.log(checkPrime(9));
-
-// Tack2 
-//getNumbers(1, 90);
-
-
-
-function checkPrime(a) {
-    for (let i = 2; i < a; i++) {
-        if (a % i == 0) return false;
-    }
-    return true;
-}
-
-function getNumbers(x1, x2) {
-    for (let i = x1; i < x2; i++) {
-        if (checkPrime(i) == true) {
-            console.log(i);
-        }
-
-    }
-
-}
-
-
-
 
 
 
