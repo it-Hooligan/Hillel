@@ -81,15 +81,50 @@ console.log(type);*/
 // console.log('After while');
 
 
-function userInt(text) {
-    const result = prompt(text);
-    const number = parseInt(result);
-    return number;
-}
+// function userInt(text) {
+//     const result = prompt(text);
+//     const number = parseInt(result);
+//     return number;
+// }
 
-const a = userInt();
+// const a = userInt();
 
-console.log(a);
+// console.log(a);
+
+
+
+
+
+// const PI_NUMBER = 3.1415;
+// const result = 1234;
+
+// function factioral (number){
+//     for (){}
+// }
+
+
+const obj = {
+    name: 2,
+    user: 3
+
+};
+obj.a = 4;
+obj.c = obj;
+console.log(obj);
+
+
+const arr = [1, 2, 3, 4, 5, ];
+arr[7] = 5;
+
+
+
+console.log(arr);
+
+
+
+
+
+
 
 
 

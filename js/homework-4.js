@@ -90,8 +90,6 @@ function getNextPrime(n) {
 
 
 
-
-
 // 9 / 2 = 4, 5
 // 9 / 8 = 1, 1
 // 9 / 3 = 3
