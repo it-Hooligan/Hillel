@@ -8,13 +8,20 @@
 
 
 //Task1 
+console.log("Task1 - - - - - - - -");
 console.log(checkPrime(9));
+console.log(checkPrime(11));
+
 
 //Task2 
-getNumbers(1, 90);
+console.log("Task2 - - - - - - - -");
+getNumbers(1, 20);
+
 
 //Task3
+console.log("Task3- - - - - - - -");
 getNextPrime(120);
+
 
 
 function checkPrime(a) {
@@ -62,9 +69,9 @@ function getNextPrime(n) {
 
 
 
-9 / 2 = 4, 5
-9 / 8 = 1, 1
-9 / 3 = 3
+// 9 / 2 = 4, 5
+// 9 / 8 = 1, 1
+// 9 / 3 = 3
 
 
 
