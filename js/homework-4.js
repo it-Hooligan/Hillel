@@ -6,18 +6,61 @@
 
 // Задание можно сделать одним фидлом, не разбивая на отдельные куски
 
+function getNextPrime(n) {
+    while (checkPrime(n) == true && n == n) {
+        n++;
+        checkPrime(n);
 
 
-const checkPrime = function (a) {
+        console.log(n);
+
+    }
+
+}
+
+getNextPrime(7);
+
+
+
+
+// Tack1 
+//console.log(checkPrime(9));
+
+// Tack2 
+//getNumbers(1, 90);
+
+
+
+function checkPrime(a) {
     for (let i = 2; i < a; i++) {
         if (a % i == 0) return false;
     }
     return true;
+}
+
+function getNumbers(x1, x2) {
+    for (let i = x1; i < x2; i++) {
+        if (checkPrime(i) == true) {
+            console.log(i);
+        }
+
+    }
+
+}
 
 
-};
 
-console.log(checkPrime(9));
+
+
+
+
+
+
+
+
+
+
+
 
 
 9 / 2 = 4, 5
