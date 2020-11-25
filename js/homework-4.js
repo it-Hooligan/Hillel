@@ -7,18 +7,50 @@
 // Задание можно сделать одним фидлом, не разбивая на отдельные куски
 
 function getNextPrime(n) {
-    while (checkPrime(n) == true && n == n) {
-        n++;
-        checkPrime(n);
 
+    for (let i = n + 1;; i++) {
 
-        console.log(n);
+        if (checkPrime(i) == true) {
+            console.log(i);
+            break;
 
+        }
     }
-
 }
+getNextPrime(120);
 
-getNextPrime(7);
+
+
+
+// for (let i = n;;) {
+
+//     if (checkPrime(i) == true) {
+
+
+//         i++;
+//         if (checkPrime(i) == true)
+//             console.log(i);
+//         break;
+//     }
+
+
+
+
+
+// }
+
+
+// while (checkPrime(n) == true && n == n) {
+//     n++;
+//     checkPrime(n);
+
+
+
+
+
+// }
+
+
 
 
 
