@@ -1,61 +1,64 @@
 /*
 TODO Реализовать функции в следующем примере. Необходимо дополнить только тот код которого не хватает (там где комментарии)
- Добавлю что решение надо сделать при помощи циклов, то есть пройти по всем элементам и к примеру найти меньшее из всех */
+ Добавлю что решение надо сделать при помощи циклов, то есть пройти по всем элементам и к примеру найти меньшее из всех  */
 
 
 
 function getSimpleNumbers(from, to) {
-    lot: for (let i = from; i < to; i++) {
 
+    lot: for (let i = from; i < to; i++) {
         for (let j = 2; j < i; j++) {
             if (i % j == 0)
                 continue lot;
         }
+
         arr.push(i);
     }
-
     // Вернуть массив простых чисел
     // Наполнять массив при помощи метода push
 }
 
 function getSumOfNumbers(arr) {
+
     let result = 0;
 
     for (let key in arr) {
         result = result + arr[key];
     }
+
     return result;
     // Вернуть сумму всех чисел массива
 }
 
 function getAverageOfNumbers(arr) {
+
     let result = 0;
 
     for (let key in arr) {
         result = result + arr[key];
     }
+
     return result / arr.length;
     // Вернуть среднее арифметическое число из чисел массива
 }
 
 function minNumber(arr) {
+
     let minResult = arr[0];
+
     for (let i = 0; i < arr.length; i++) {
-        if (minResult > arr[i])
+        if (minResult > arr[i]) {
             minResult = arr[i];
-
-
+        }
     }
     return minResult;
-
-
-
-
     // Найти и вернуть минимальное число в массиве
 }
 
 function maxNumber(arr) {
+
     let maxResult = arr[0];
+
     for (let i = 1; i < arr.length; i++) {
         if (arr[i] > maxResult) {
             maxResult = arr[i];
