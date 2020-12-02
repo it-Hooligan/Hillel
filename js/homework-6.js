@@ -2,7 +2,9 @@
 TODO Реализовать функции в следующем примере. Необходимо дополнить только тот код которого не хватает (там где комментарии)
  Добавлю что решение надо сделать при помощи циклов, то есть пройти по всем элементам и к примеру найти меньшее из всех  */
 
+// let arr = [];
 
+// getSimpleNumbers(2, 20);
 
 function getSimpleNumbers(from, to) {
 
@@ -93,3 +95,5 @@ function getUserNumberAsInteger(message) {
     const userInput = prompt(message);
     return parseInt(userInput);
 }
+start();
+getUserNumberAsInteger();
