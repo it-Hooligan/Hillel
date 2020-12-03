@@ -2,8 +2,7 @@
 TODO Реализовать функции в следующем примере. Необходимо дополнить только тот код которого не хватает (там где комментарии)
  Добавлю что решение надо сделать при помощи циклов, то есть пройти по всем элементам и к примеру найти меньшее из всех  */
 
-// let arr = [];
-
+let arr = [];
 // getSimpleNumbers(2, 20);
 
 function getSimpleNumbers(from, to) {
@@ -16,6 +15,8 @@ function getSimpleNumbers(from, to) {
 
         arr.push(i);
     }
+
+    return arr;
     // Вернуть массив простых чисел
     // Наполнять массив при помощи метода push
 }
@@ -79,7 +80,7 @@ function start() {
 
     console.log('========================================');
     console.log(`Диапазон задан от ${from} до ${to}`);
-    console.log('Простые числа', simpleNumbers);
+    console.log(`Простые числа, ${simpleNumbers}`);
     // Тут вывести в консоль результаты всех остальных функций
     console.log(`Массив чисел: ${arr}`);
     console.log(`Сумма всех чисел: ${getSumOfNumbers(arr)}`);
@@ -96,4 +97,4 @@ function getUserNumberAsInteger(message) {
     return parseInt(userInput);
 }
 start();
-getUserNumberAsInteger();
+// // getUserNumberAsInteger();
