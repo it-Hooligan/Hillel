@@ -1,3 +1,77 @@
+// arr.jf = 5; 
+
+// console.log(arr);
+
+
+let arr = [23, 45, 67, 'dik', 'fogk', 5, ];
+for (let i of arr) {
+    console.log(i);
+}
+
+console.log(arr[3]());
+
+
+let fruits = ["Яблоко", "Апельсин", "Слива"];
+
+// fruits.splice(1,2,"Слива Нова",4 , 4, 5);
+
+// проходит по значениям
+// for (let fruit of fruits) {
+// console.log(fruits);
+// console.log(fruits.length);
+
+// }
+
+fruits.forEach(console.log);
+
+
+let getSum = (a, b, c) => a * b + c;
+
+
+
+console.log(getSum(2, 4, 9));
+
+
+
+
+let arr1 = ["Есть", "жизнь", "на", "Марсе"];
+
+var arrLength = arr1.map(item => item.length);
+
+console.log(arrLength); // 4,5,2,5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let arr = [];
 
 getSimpleNumbers(2, 20);

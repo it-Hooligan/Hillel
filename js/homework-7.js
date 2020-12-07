@@ -16,18 +16,18 @@
 // Регистр текста влиять не влияет на результат, слово как из больших букв так и из маленьких если есть в массиве spamWords будет означать что текст содержит спам
 // }
 
-function replaceSpam(text, spamWords, replaceWith) {
-    // Данная функция должна находить запрещенные слова в тексте, и удалять его при помощи текста переданного в агрументе replaceWith
-    // Если слово было написано с большими буквами то большие буквы должны и остаться в конечном тексте, если слово не является спамом
+// function replaceSpam(text, spamWords, replaceWith) {
+// Данная функция должна находить запрещенные слова в тексте, и удалять его при помощи текста переданного в агрументе replaceWith
+// Если слово было написано с большими буквами то большие буквы должны и остаться в конечном тексте, если слово не является спамом
 
-    /* Пример работы
-    const text = 'A b c D e f G h i';
-    const spam = ['a', 'c', 'h'];
-    
-    const result = replaceSpam(text, spam, 'XXX');
-    console.log(result); // 'XXX b XXX D e f G XXX i'
-    */
-}
+/* Пример работы
+const text = 'A b c D e f G h i';
+const spam = ['a', 'c', 'h'];
+
+const result = replaceSpam(text, spam, 'XXX');
+console.log(result); // 'XXX b XXX D e f G XXX i'
+*/
+// }
 
 
 
@@ -52,7 +52,7 @@ const texts = [
 
 const spamWords = [
     'dolorem',
-    'dolorem',
+    'commodi',
     'adipisicing',
     'doloribus',
 ];
@@ -63,11 +63,14 @@ function hasSpam(text, spamWords) {
     console.log(textUpp);
 
     const spamWordsUpp = spamWords.map(str => str.toUpperCase());
+    // .join();
     console.log(spamWordsUpp);
 
-    const noSpam = textUpp.filter(value => !value.includes('DOLOREM'));
+    const noSpam = textUpp.filter(value => spamWordsUpp.includes(value));
+    // ('DOLOREM' || 'COMMODI' || 'DOLORIBUS' || 'ADIPISICING'));
 
     console.log(noSpam);
+    // console.log(spamWordsUpp);
 }
 // });
 hasSpam(texts, spamWords);
@@ -89,10 +92,10 @@ hasSpam(texts, spamWords);
 
 // // }
 
-texts.forEach(text => {
-    const isTextContainsSpam = hasSpam(text, spamWords);
-    const withoutSpam = replaceSpam(text, spamWords, 'XXXXXX');
+// texts.forEach(text => {
+//     const isTextContainsSpam = hasSpam(text, spamWords);
+//     const withoutSpam = replaceSpam(text, spamWords, 'XXXXXX');
 
-    console.log(isTextContainsSpam);
-    console.log(withoutSpam);
-});
+//     console.log(isTextContainsSpam);
+//     console.log(withoutSpam);
+// });
