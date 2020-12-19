@@ -42,11 +42,42 @@ console.log(arrLength); // 4,5,2,5
 
 
 
+const obj = {
+    all: "people",
+    nadia: "people",
+    cat: "animal",
+    hors: "animal"
+};
+let newM = [];
+for (let key in obj) {
+    if (obj[key] == "people") {
+        newM.push(key);
+        console.log(key);
+    }
+}
+console.log(newM);
+
+
+let newObj = Object.entries(obj)
+    .filter(k => k.includes("people"))
+    .map(item => item[0]);
+console.log(newObj);
 
 
 
 
 
+
+const arr2 = [5, "жизнь", "на", "Марсе", [2, 5]];
+console.log(arr2);
+var arrLength = arr2.map(item => {
+
+    item[0] = 4;
+    return item;
+});
+
+console.log(arrLength);
+console.log(arr2);
 
 
 
@@ -590,3 +621,34 @@ alert(false || true); // true
 alert(true || false); // true
 alert(false || null); //??? null 
 */
+
+let num = 30;
+
+function shoeFirstMessage(x) {
+    console.log(x);
+    let num = 10;
+}
+shoeFirstMessage(`ghgh`);
+console.log(num);
+
+function ret() {
+    num = 50;
+    return num;
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+const ds = [1, 4, 6, 5, 6, 5, 5, 5, 4, ];
+
+
+// const str = 'texteeeeeeeeee';
+// console.log(str.toUpperCase());
+// let fruit = 'Some fruit';
+// console.log(fruit.indexOf('fruit'));
+
+// const logg = 'Hellow world';
+// const sl = logg.substr(4, 5);
+// console.log(sl);
+
+const num = '12.6px';
+console.log(parseFloat(num));
